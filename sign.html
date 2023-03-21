@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script type="text/javascript" src="main.js"></script>
+  <div class="bg-img">
+    <div class="content">
+      <header>Sign-up Form</header>
+      <form action="loginPage.php" method="POST">
+        <div class="field">
+          <span class="fa fa-lock"></span>
+          <input name="sign_name" type="text"  required placeholder="Name">
+          <span class="show">SHOW</span>
+        </div>
+        <div class="field space">
+          <span class="fa fa-user"></span>
+          <input name="sign_email" type="text" class="email" required placeholder="Email">
+        </div>
+        <div class="field space">
+          <span class="fa fa-lock"></span>
+          <input id="pass" name="sign_password" type="password" class="pass-key" required placeholder="Password">
+          <span id="show" class="show">SHOW</span>
+        </div>
+        
+        <div class="field space">
+          <input type="submit" value="Submit" name="createEntry">
+        </div>
+      </form>
+      <div class="signup">Already Signed up?
+        <a href="index.html">Login</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
