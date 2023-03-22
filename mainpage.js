@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    //to check users login history 
     document.getElementById ("loggedInBtn").addEventListener ("click", loggedInBtn, false);
+    //fetching sample API
     fetch('https://reqres.in/api/users?page=1')
     .then(response => response.json())
     .then(data => {
@@ -12,12 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error(error);
     });
 });
+//redirection to login history page
   function loggedInBtn(){
     window.location.href = 'loginTime.php';
   }
+  //dynamicaly generating table body as per api response
 function generateTableTemplate(item){
     const tableBody = document.getElementById('table_body');
-  const row = document.createElement('tr');
+    const row = document.createElement('tr');
     const cell1 = document.createElement('td');
     cell1.textContent = item.id;
     row.appendChild(cell1);
