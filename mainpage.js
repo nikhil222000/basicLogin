@@ -17,11 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 function generateTableTemplate(item){
     const tableBody = document.getElementById('table_body');
-
-// Loop through the data array
-  // Create a new row element
   const row = document.createElement('tr');
-  // Loop through the subarray and create a new cell for each item
     const cell1 = document.createElement('td');
     cell1.textContent = item.id;
     row.appendChild(cell1);
@@ -39,7 +35,6 @@ function generateTableTemplate(item){
     imgtag.setAttribute('src', item.avatar)
     row.appendChild(cell5);
   
-  // Append the row to the table body
   tableBody.appendChild(row);
 
 }
