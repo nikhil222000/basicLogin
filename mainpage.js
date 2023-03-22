@@ -34,7 +34,5 @@ function generateTableTemplate(item){
     const imgtag=cell5.appendChild(document.createElement('img'))
     imgtag.setAttribute('src', item.avatar)
     row.appendChild(cell5);
-  
-  tableBody.appendChild(row);
-
+   tableBody.appendChild(row);
 }
